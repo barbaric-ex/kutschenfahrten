@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="180.127" viewBox="0 0 1920 180.127">
+  <defs>
+    <filter id="boxShadow" x="-50%" y="-50%" width="200%" height="200%">
+      <feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#00000029"/>
+    </filter>
+    <style>.a{fill:#EFEFEF;}</style>
+  </defs>
+  <path class="a" d="M396.269,110.292a22.581,22.581,0,0,1,18.84-10.137H1920V10H0V190.127H331.4a22.569,22.569,0,0,0,18.84-10.134Z" transform="translate(0 -10)" filter="url(#boxShadow)"/>
+</svg>
