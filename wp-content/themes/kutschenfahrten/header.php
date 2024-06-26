@@ -16,7 +16,7 @@
 	<link href="<?php echo get_template_directory_uri(); ?>/css/animate.css" rel="stylesheet">
 
 	<link href="<?php echo get_template_directory_uri(); ?>/css/animsition.min.css" rel="stylesheet">
-
+	<link href="<?php echo get_template_directory_uri(); ?>/dzsparallaxer/dzsparallaxer.css" rel='stylesheet'>
 	<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/owlcarousel/owl.carousel.min.css">
 	<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/owlcarousel/owl.theme.default.css">
 
@@ -58,3 +58,5 @@
 				</div>
 			</div>
 		</nav>
+
+		<div class="animsition">

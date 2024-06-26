@@ -89,4 +89,30 @@
   $(".to-top").click(function () {
     $("html, body").animate({ scrollTop: 0 }, 800, "easeInOutExpo");
   });
+  $(document).ready(function () {
+    $(".animsition").animsition({
+      inClass: "fade-in",
+      outClass: "fade-out",
+      inDuration: 800,
+      outDuration: 800,
+
+      linkElement: ".animsition-link a, .standard-btn a",
+      linkElement:
+        '.animsition-link a:not([target="_blank"]):not([href^="#"]):not([href^="?"]):not([class^="cc-btn"]):not([class^="dr-tab-category-morelink"]):not([class^="dr-privacylink"]):not([class^="remove"]):not([class^="tinvwl_add_to_wishlist_button"])',
+      loading: true,
+      loadingParentElement: "body",
+      loadingClass: "animsition-loading",
+      loadingInner: "",
+      timeout: false,
+      timeoutCountdown: 5000,
+      onLoadEvent: true,
+      browser: ["animation-duration", "-webkit-animation-duration"],
+      overlay: false,
+      overlayClass: "animsition-overlay-slide",
+      overlayParentElement: "body",
+      transition: function (url) {
+        window.location.href = url;
+      },
+    });
+  });
 })(jQuery);

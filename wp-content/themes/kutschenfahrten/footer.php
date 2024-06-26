@@ -115,6 +115,7 @@
 
 
 </div>
+</div>
 
 
 
@@ -126,7 +127,7 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/ScrollMagic.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/plugins/animation.gsap.min.js"></script>
-
+<script src="<?php echo get_template_directory_uri(); ?>/dzsparallaxer/dzsparallaxer.js" type="text/javascript"></script>
 <script src="<?php echo get_template_directory_uri(); ?>/js/custom.js"></script>
 <script src="<?php echo get_template_directory_uri(); ?>/js/jquery.marquee.min.js"></script>
 

@@ -52,7 +52,7 @@ get_header(); ?>
                                 <?php if ($background_image_1) : ?>
 
                                     <div class="potkova potkova1">
-                                        <img src="<?php echo $background_image_1['sizes']['medium']; ?>" alt="name">
+                                        <img class="dzsparallaxer auto-init" data-options='{ "settings_mode": "oneelement","direction":"reverse","scroll_axis_x":"on","scroll_axis_y":"off","settings_mode_oneelement_max_offset": "250"}' src="<?php echo $background_image_1['sizes']['medium']; ?>" alt="name">
                                     </div>
                                 <?php endif; ?>
 
@@ -98,11 +98,10 @@ get_header(); ?>
                                     speed_text = 300;
                                 }
                                 console.log(speed_text)
-                                $('.marquee1').marquee({
+                                $(' .marquee1').marquee({
                                     gap: 50,
                                     duplicated: true,
                                     speed: speed_text,
-
                                 });
                             });
                         </script>
