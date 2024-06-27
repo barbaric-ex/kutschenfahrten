@@ -1331,7 +1331,6 @@ body.single-blog-details .menu-item-34 a {
 }
 
 .hanes_sec2 .container {
-  max-width: 1620px;
 }
 
 .hanes_sec3 {
@@ -1447,6 +1446,7 @@ body.single-blog-details .menu-item-34 a {
   font-size: 54px;
   font-family: "Cherilyn";
   font-weight: 600;
+  letter-spacing: 2.7px;
 }
 .ange_sec2 .big_wrap .item_wrap .first .title .line_wrap {
   height: 1px;
@@ -1723,6 +1723,180 @@ body.single-blog-details .menu-item-34 a {
   overflow: hidden;
 }
 
+/****************************kalendar****************************************************************************/
+
+.jetz_sec2 .fc .fc-col-header-cell {
+  text-align: center;
+}
+.jetz_sec2 .fc-daygrid {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.jetz_sec2 .fc .fc-col-header-cell,
+.jetz_sec2 .fc .fc-daygrid-day,
+.jetz_sec2 .fc .fc-daygrid-day-frame,
+.jetz_sec2 .fc .fc-daygrid-day-top,
+.jetz_sec2 .fc .fc-daygrid-day-events,
+.jetz_sec2 .fc .fc-daygrid-day-bg {
+  border: none !important;
+}
+
+.jetz_sec2 .fc .fc-scrollgrid {
+  border: none !important;
+}
+
+.jetz_sec2 .fc .fc-daygrid-day-number {
+  border: none !important;
+}
+
+.jetz_sec2 .fc .fc-daygrid-event {
+  border: none !important;
+  box-shadow: none !important;
+}
+
+.jetz_sec2 .fc .fc-daygrid-body-unbalanced .fc-scrollgrid-sync-table,
+.jetz_sec2 .fc .fc-daygrid-day-events > div,
+.jetz_sec2 .fc .fc-daygrid-day-bg > div {
+  border: none !important;
+}
+
+.jetz_sec2 .fc .fc-scrollgrid-sync-inner {
+  border-right: none !important;
+  border-bottom: none !important;
+}
+
+/* Additional rules to remove any remaining borders */
+.jetz_sec2 .fc .fc-daygrid-body,
+.jetz_sec2 .fc .fc-daygrid-body table,
+.jetz_sec2 .fc .fc-daygrid-body tbody,
+.jetz_sec2 .fc .fc-daygrid-body td,
+.jetz_sec2 .fc .fc-scrollgrid-sync-table,
+.jetz_sec2 .fc .fc-daygrid,
+.jetz_sec2 .fc .fc-daygrid td {
+  border: none !important;
+}
+
+/* Remove padding/margins that might look like borders */
+.jetz_sec2 .fc .fc-daygrid-day-top,
+.jetz_sec2 .fc .fc-daygrid-day-frame,
+.jetz_sec2 .fc .fc-daygrid-day-bg,
+.jetz_sec2 .fc .fc-daygrid-day-events,
+.jetz_sec2 .fc .fc-col-header-cell {
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+/* Specific targeting for right border */
+.jetz_sec2 .fc .fc-scrollgrid-sync-table {
+  border-right-width: 0 !important;
+}
+
+.jetz_sec2 .fc .fc-col-header {
+  border-right: none !important;
+}
+
+.jetz_sec2 .fc .fc-view-harness {
+  border-right: none !important;
+}
+
+.jetz_sec2 .fc .fc-daygrid-body table {
+  border-right: none !important;
+}
+
+/* Centriranje brojeva i smanjenje visine */
+.jetz_sec2 .fc .fc-daygrid-day-number {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 15px;
+}
+
+.jetz_sec2 .fc .fc-daygrid-day {
+  height: 15px !important;
+}
+
+.jetz_sec2 .fc .fc-daygrid-day-frame {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+/* Smanjenje visine ćelija */
+.jetz_sec2 .fc .fc-daygrid-body td {
+  height: 20px !important;
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+.jetz_sec2 .fc .fc-daygrid {
+}
+
+.jetz_sec2 .fc .fc-daygrid-day-number {
+  line-height: 15px; /* Podešavanje linijske visine */
+}
+
+.jetz_sec2 .fc .fc-daygrid-day {
+  width: 30px !important; /* Podešavanje širine ćelija */
+  max-width: 30px !important;
+}
+
+/**********************************************************************************************/
+
+.jetz_sec2 {
+}
+.jetz_sec2 .wrapper {
+  max-width: 570px;
+  padding-top: 200px;
+  padding-left: 50px;
+}
+.jetz_sec2 .wrapper .text {
+}
+.jetz_sec2 .wrapper .text {
+}
+.jetz_sec2 .wrapper .text {
+  font-size: 23px;
+  line-height: 1.3;
+}
+.jetz_sec2 .wrapper .wrap2 {
+  margin-top: 40px;
+  display: flex;
+}
+.jetz_sec2 .wrapper .wrap2 .bes_wrap {
+  display: flex;
+}
+.jetz_sec2 .wrapper .wrap2 .bes_wrap .square_black {
+  width: 30px;
+  height: 30px;
+  background: #000;
+  border-radius: 4px;
+  margin-right: 15px;
+}
+.jetz_sec2 .wrapper .wrap2 .bes_wrap .name {
+  font-size: 20px;
+  color: #020203;
+}
+.jetz_sec2 .wrapper .wrap2 .ver_wrap {
+  display: flex;
+  margin-left: 50px;
+}
+.jetz_sec2 .wrapper .wrap2 .ver_wrap .white_square {
+  width: 30px;
+  height: 30px;
+  background: #ffffff08;
+  border-radius: 4px;
+  margin-right: 15px;
+  border: 1px solid;
+}
+.jetz_sec2 .wrapper .wrap2 .ver_wrap .name {
+  font-size: 20px;
+  color: #020203;
+}
+.jetz_sec2 {
+  margin-top: 40px;
+}
+
 /**********************************************************/
 
 @media (min-width: 992px) {
@@ -1736,7 +1910,7 @@ body.single-blog-details .menu-item-34 a {
 
 @media (max-width: 1750px) {
   .container {
-    max-width: 1533px;
+    max-width: 1462px;
   }
 }
 
@@ -2037,11 +2211,12 @@ body.single-blog-details .menu-item-34 a {
   }
   .home_mega_wrap .fixed_img.image1 img {
     max-width: 400px;
-    bottom: 322px;
+    bottom: 223px;
   }
 
   .home_mega_wrap .fixed_img.image2 img {
     left: 0;
+    bottom: 0;
   }
 
   .home_sec1 {
@@ -2292,6 +2467,13 @@ body.single-blog-details .menu-item-34 a {
 }
 
 @media (max-width: 767px) {
+  .hanes_sec2 .gray_img.image1 img {
+    left: inherit;
+    right: 0;
+  }
+  .hannes_sec4 {
+    min-height: 270px;
+  }
   .footer .wrapper2 {
     padding-left: 0;
   }

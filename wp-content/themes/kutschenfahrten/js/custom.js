@@ -89,6 +89,7 @@
   $(".to-top").click(function () {
     $("html, body").animate({ scrollTop: 0 }, 800, "easeInOutExpo");
   });
+
   $(document).ready(function () {
     $(".animsition").animsition({
       inClass: "fade-in",

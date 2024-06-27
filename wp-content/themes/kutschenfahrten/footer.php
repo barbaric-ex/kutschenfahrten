@@ -131,6 +131,9 @@
 <script src="<?php echo get_template_directory_uri(); ?>/js/custom.js"></script>
 <script src="<?php echo get_template_directory_uri(); ?>/js/jquery.marquee.min.js"></script>
 
+<script src="<?php echo get_template_directory_uri(); ?>/js/index.global.js"></script>
+<script src="<?php echo get_template_directory_uri(); ?>/js/index.global.min.js"></script>
+
 <script src="<?php echo get_template_directory_uri(); ?>/js/wow.js"></script>
 <?php wp_footer() ?>
 

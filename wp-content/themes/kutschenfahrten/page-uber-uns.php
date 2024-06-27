@@ -36,7 +36,7 @@ get_header(); ?>
 
             <?php if ($background_image_1) : ?>
                 <div class="gray_img image1">
-                    <img src="<?php echo $background_image_1['sizes']['medium']; ?>" alt="name">
+                    <img class="dzsparallaxer auto-init" data-options='{ "settings_mode": "oneelement","direction":"reverse","scroll_axis_x":"on","scroll_axis_y":"off","settings_mode_oneelement_max_offset": "250"}' src="<?php echo $background_image_1['sizes']['medium']; ?>" alt="name">
                 </div>
             <?php endif; ?>
 

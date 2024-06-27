@@ -51,12 +51,65 @@ get_header(); ?>
 <div class="jetz_sec2">
     <div class="container">
         <div class="row">
-            <div class="col-lg-6">
+            <div class="col-lg-5">
+                <div id='calendar'></div>
+            </div>
 
+            <div class="col-lg-7">
+                <div class="wrapper">
+                    <div class="text">
+                        <p>Fragen Sie unkompliziert ihren Wunschtermin an und wir melden uns schnellstmöglich zurück.</p>
+                    </div>
+
+                    <div class="wrap2">
+                        <div class="bes_wrap">
+                            <div class="square_black">
+
+                            </div>
+                            <div class="name">
+                                BESETZT
+                            </div>
+                        </div>
+
+                        <div class="ver_wrap">
+                            <div class="white_square">
+
+                            </div>
+                            <div class="name">
+                                VERFÜGBAR
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
 </div>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        var calendarEl = document.getElementById('calendar');
+        var calendar = new FullCalendar.Calendar(calendarEl, {
+            initialView: 'dayGridMonth',
+            locale: 'de', // Postavljanje jezika na njemački
+            dayHeaderFormat: {
+                weekday: 'short'
+            } // Prikaz dana u tjednu na njemačkom
+        });
+        calendar.render();
+        moveWeekDaysToBottom();
+    });
+
+    function moveWeekDaysToBottom() {
+        var colHeader = document.querySelector('.fc-col-header');
+        var dayGridBody = document.querySelector('.fc-daygrid-body');
+        if (colHeader && dayGridBody) {
+            colHeader.parentNode.insertBefore(dayGridBody, colHeader);
+        }
+    }
+</script>
+
+
 
 
 
