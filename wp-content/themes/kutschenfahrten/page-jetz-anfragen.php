@@ -51,7 +51,9 @@ get_header(); ?>
 <div class="jetz_sec2">
     <div class="container">
         <div class="row">
+            <div class="col-lg-6">
 
+            </div>
         </div>
     </div>
 </div>

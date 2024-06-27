@@ -42,7 +42,7 @@ get_header(); ?>
             $args = array(
                 'post_type' => 'horse',
                 'paged' => $paged,
-                'posts_per_page' => 1,
+                'posts_per_page' => 4,
             );
             $loop = new WP_Query($args);
             $i = 0;

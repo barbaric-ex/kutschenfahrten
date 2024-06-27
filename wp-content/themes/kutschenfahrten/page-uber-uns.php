@@ -118,9 +118,25 @@ get_header(); ?>
 
 
         <?php if ($background_image) : ?>
-            <div class="hannes_sec4" style="background-image: url(<?php echo $background_image['sizes']['large']; ?>);">
+            <div class="hannes_sec4 ">
+
+                <img class="thumbnail" src="<?php echo $background_image['sizes']['large']; ?>" alt="name">
 
             </div>
+
+
+            <script src="https://cdn.jsdelivr.net/npm/simple-parallax-js@5.5.1/dist/simpleParallax.min.js"></script>
+
+            <script>
+                var imageElement = document.querySelector('.hannes_sec4 .thumbnail');
+                if (imageElement) {
+                    new simpleParallax(imageElement, {
+                        scale: 1.5,
+                        delay: .6,
+                        transition: 'cubic-bezier(0,0,0,1)'
+                    });
+                }
+            </script>
         <?php endif; ?>
 
     <?php endwhile; ?>

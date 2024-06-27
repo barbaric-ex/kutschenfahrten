@@ -20,7 +20,7 @@ get_header(); ?>
                 <div class="row">
                     <div class="col-lg-12">
                         <?php if ($title) : ?>
-                            <div class="title">
+                            <div class="title wow fadeInLeft" data-wow-delay="0.5s" data-wow-duration="0.5s">
                                 <h2> <?php echo $title ?></h2>
                             </div>
                         <?php endif; ?>
@@ -51,7 +51,7 @@ get_header(); ?>
                 <div class="row">
                     <div class="col-lg-5">
                         <?php if ($text_info_1) : ?>
-                            <div class="first_info">
+                            <div class="first_info wow fadeInUp" data-wow-delay="0.6s" data-wow-duration="0.5s">
                                 <?php echo $text_info_1 ?>
                             </div>
                         <?php endif; ?>
@@ -60,7 +60,7 @@ get_header(); ?>
 
                     <div class="col-lg-7">
 
-                        <div class="second_info">
+                        <div class="second_info wow fadeInUp" data-wow-delay="0.7s" data-wow-duration="0.5s">
                             <?php if ($text_info_2) : ?>
                                 <div class="links_wrapper">
                                     <?php echo $text_info_2 ?>
