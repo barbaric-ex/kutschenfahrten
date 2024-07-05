@@ -52,6 +52,12 @@
   font-display: swap;
 }
 
+.form_top_text {
+}
+.form_top_text p {
+  color: #cf0e0e;
+}
+
 .navbar .left_logo_wrap {
   background-image: url(../img/logo_box3.png);
   height: 234px;
@@ -221,6 +227,7 @@ input:focus {
   position: relative;
   top: 0;
   visibility: hidden;
+  /* padding-top: 82px; */
 }
 
 div.table {
@@ -1644,8 +1651,8 @@ body.single-blog-details .menu-item-34 a {
 }
 
 .jetz_sec3 {
-  margin-top: 150px;
   margin-bottom: 170px;
+  padding-top: 150px;
 }
 .jetz_sec3 .form_wrap {
 }
@@ -2064,6 +2071,9 @@ body.single-blog-details .menu-item-34 a {
 }
 
 .jetz_sec2 .container {
+}
+
+.big_wrapper_cal {
   border-bottom: 1px solid #707070;
 }
 
@@ -2340,6 +2350,9 @@ body.single-blog-details .menu-item-34 a {
 }
 
 @media (max-width: 991px) {
+  .anchor {
+    padding-top: 90px;
+  }
   .kont_sec3 {
     margin-bottom: 30px;
   }
@@ -2350,12 +2363,13 @@ body.single-blog-details .menu-item-34 a {
   }
   .jetz_sec2 .wrapper {
     padding-left: 0;
-    padding-top: 40px;
+    padding-top: 0px;
     margin-bottom: 50px;
   }
   .jetz_sec3 {
-    margin-top: 40px;
+    margin-top: 0px;
     margin-bottom: 40px;
+    padding-top: 0px;
   }
 
   .jetz_sec3 .form_wrap .acf-button,

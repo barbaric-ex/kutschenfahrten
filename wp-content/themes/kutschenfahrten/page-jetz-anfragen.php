@@ -59,41 +59,42 @@ get_header(); ?>
 
 
     ?>
-        <div class="jetz_sec2">
+        <div class="jetz_sec2" id="jetz_sec22">
             <div class="container">
-                <div class="row">
-                    <div class="col-lg-5 small-calendar">
-                        <div class="date_wrapper">
-                            <h4>Jänner</h4>
-                            <p>Dienstag 22.01. 2024</p>
+                <div class="big_wrapper_cal">
+                    <div class="row">
+                        <div class="col-lg-5 small-calendar">
+                            <div class="date_wrapper">
+                                <h4>Jänner</h4>
+                                <p>Dienstag 22.01. 2024</p>
+                            </div>
+                            <div id='calendar'></div>
                         </div>
-                        <div id='calendar'></div>
-                    </div>
 
-                    <div class="col-lg-7">
-                        <div class="wrapper">
+                        <div class="col-lg-7">
+                            <div class="wrapper">
 
-                            <?php if ($text) : ?>
-                                <div class="text">
-                                    <p><?php echo $text ?></p>
-                                </div>
-                            <?php endif; ?>
+                                <?php if ($text) : ?>
+                                    <div class="text">
+                                        <p><?php echo $text ?></p>
+                                    </div>
+                                <?php endif; ?>
 
 
-                            <div class="wrap2">
-                                <div class="bes_wrap">
-                                    <div class="square_black">
+                                <div class="wrap2">
+                                    <div class="bes_wrap">
+                                        <div class="square_black">
+
+                                        </div>
+                                        <?php if ($small_text_1) : ?>
+                                            <div class="name">
+                                                <?php echo $small_text_1 ?>
+                                            </div>
+                                        <?php endif; ?>
 
                                     </div>
-                                    <?php if ($small_text_1) : ?>
-                                        <div class="name">
-                                            <?php echo $small_text_1 ?>
-                                        </div>
-                                    <?php endif; ?>
 
-                                </div>
-
-                                <!-- <div class="ver_wrap">
+                                    <!-- <div class="ver_wrap">
                                     <div class="white_square">
 
                                     </div>
@@ -106,13 +107,14 @@ get_header(); ?>
                                 </div> -->
 
 
+                                </div>
+
+                                <div class="warrning_text">
+                                    <p></p>
+                                </div>
+
+
                             </div>
-
-                            <div class="warrning_text">
-                                <p></p>
-                            </div>
-
-
                         </div>
                     </div>
                 </div>
@@ -171,6 +173,14 @@ get_header(); ?>
                     dateEl.textContent = currentDate;
                 }
 
+                function formatDateToGerman(dateStr) {
+                    var date = new Date(dateStr);
+                    var day = date.getDate().toString().padStart(2, '0');
+                    var month = (date.getMonth() + 1).toString().padStart(2, '0');
+                    var year = date.getFullYear();
+                    return `${day}.${month}.${year}`;
+                }
+
                 var calendar = new FullCalendar.Calendar(calendarEl, {
                     initialView: 'dayGridMonth',
                     locale: 'de', // Postavljanje jezika na njemački
@@ -198,6 +208,14 @@ get_header(); ?>
 
                         if (isDateReserved) {
                             warningTextEl.textContent = 'Dieser Termin ist bereits gebucht, bitte wählen Sie einen anderen Tag';
+
+                            // Pomicanje na vrh sekcije jetz_sec22
+                            var sectionEl = document.getElementById('jetz_sec22');
+                            if (sectionEl) {
+                                sectionEl.scrollIntoView({
+                                    behavior: 'smooth'
+                                });
+                            }
                             return;
                         } else {
                             warningTextEl.textContent = ''; // Očisti poruku upozorenja ako je datum slobodan
@@ -207,9 +225,23 @@ get_header(); ?>
 
                         var dateField = document.getElementById('acf-field_6673f6c0f7801-field_6673f6c0f7802');
                         if (dateField) {
-                            dateField.value = info.dateStr;
+                            dateField.value = formatDateToGerman(info.dateStr);
                         } else {
                             console.warn('Date field not found!');
+                        }
+
+                        // Promjena teksta u form_top_text
+                        var formTopTextEl = document.querySelector('.form_top_text p');
+                        if (formTopTextEl) {
+                            formTopTextEl.textContent = `Molim unesite vaše podatke za datum: ${formatDateToGerman(info.dateStr)}`;
+                        }
+
+                        // Pomicanje na formu
+                        var formSection = document.getElementById('jetz_sec33');
+                        if (formSection) {
+                            formSection.scrollIntoView({
+                                behavior: 'smooth'
+                            });
                         }
                     }
                 });
@@ -231,12 +263,15 @@ get_header(); ?>
 <script src="<?php echo get_template_directory_uri(); ?>/js/index.global.min.js"></script>-->
 
 
-
-<div class="jetz_sec3">
+<div class="anchor" id="jetz_sec33"></div>
+<div class="jetz_sec3" id="">
     <div class="container">
         <div class="row">
             <div class="col-lg-12">
                 <div class="form_wrap">
+                    <div class="form_top_text">
+                        <p></p>
+                    </div>
                     <?php echo do_shortcode('[advanced_form form="form_6673f805de125" submit_text="ANFRAGE SENDEN"]'); ?>
 
                 </div>
