@@ -65,8 +65,8 @@ get_header(); ?>
                     <div class="row">
                         <div class="col-lg-5 small-calendar">
                             <div class="date_wrapper">
-                                <h4>Jänner</h4>
-                                <p>Dienstag 22.01. 2024</p>
+                                <h4></h4>
+                                <p></p>
                             </div>
                             <div id='calendar'></div>
                         </div>
