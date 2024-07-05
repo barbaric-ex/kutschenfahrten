@@ -233,7 +233,7 @@ get_header(); ?>
                         // Promjena teksta u form_top_text
                         var formTopTextEl = document.querySelector('.form_top_text p');
                         if (formTopTextEl) {
-                            formTopTextEl.textContent = `Molim unesite vaše podatke za datum: ${formatDateToGerman(info.dateStr)}`;
+                            formTopTextEl.textContent = `Bitte geben Sie Ihre Daten für das Datum ein: ${formatDateToGerman(info.dateStr)}`;
                         }
 
                         // Pomicanje na formu

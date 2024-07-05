@@ -80,6 +80,7 @@
 
 .navbar.top-nav-collapse .left_logo_wrap {
   opacity: 0;
+  height: 0;
 }
 
 .home_mega_wrap {
