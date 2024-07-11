@@ -18,7 +18,7 @@
 					<div class="col-lg-12">
 						<div class="wrapper1">
 							<div class="logo wow fadeInLeft" data-wow-delay="0.5s" data-wow-duration="0.5s">
-								<img src="<?php echo get_template_directory_uri(); ?>/img/Logo/Kutschenfarten_logo.svg" alt="">
+								<img src="<?php echo get_template_directory_uri(); ?>/img/Logo/logo_main2.png" alt="">
 							</div>
 
 							<div class="link_wrapper wow fadeInRight" data-wow-delay="0.5s" data-wow-duration="0.5s">

@@ -34,6 +34,7 @@
 <body id="page-top" <?php body_class(); ?>>
 	<div class="page-wrap">
 		<nav class="navbar navbar-expand-lg navbar-default fixed-top " id="mainNav">
+			<div class="menu_bar_nav"></div>
 			<div class="left_logo_wrap">
 				<div class="clipped_content">
 
@@ -41,7 +42,7 @@
 			</div>
 			<div class="container">
 				<div class="menu-btn"><button class="c-hamburger c-hamburger--htx"><span>toggle menu</span> </button></div>
-				<div class="logo animsition-link"><a href="<?php echo home_url(); ?>"><img src="<?php echo get_template_directory_uri(); ?>/img/Logo/Kutschenfarten_logo.svg" alt="Name"></a></div>
+				<div class="logo animsition-link"><a href="<?php echo home_url(); ?>"><img src="<?php echo get_template_directory_uri(); ?>/img/Logo/logo_main2.png" alt="Name"></a></div>
 				<div class="collapse navbar-collapse " id="navbarResponsive">
 					<?php
 					wp_nav_menu(array(

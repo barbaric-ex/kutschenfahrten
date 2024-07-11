@@ -93,9 +93,9 @@ get_header(); ?>
                             $(function() {
                                 var speed_text;
                                 if ($(window).width() < 991) {
-                                    speed_text = 300;
+                                    speed_text = 80;
                                 } else {
-                                    speed_text = 300;
+                                    speed_text = 150;
                                 }
                                 console.log(speed_text)
                                 $(' .marquee1').marquee({
@@ -290,8 +290,8 @@ get_header(); ?>
 
                         //nav:true,
                         dots: false,
-                        autoplay: false,
-                        autoplaySpeed: 1000,
+                        autoplay: true,
+                        autoplaySpeed: 400,
 
                         autoplayHoverPause: false
 

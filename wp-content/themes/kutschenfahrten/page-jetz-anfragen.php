@@ -55,9 +55,6 @@ get_header(); ?>
         $small_text_1 = get_sub_field('small_text_1');
         $small_text_2 = get_sub_field('small_text_2');
 
-
-
-
     ?>
         <div class="jetz_sec2" id="jetz_sec22">
             <div class="container">
@@ -145,7 +142,6 @@ get_header(); ?>
 
                 console.log('All events:', events);
 
-                // Postavljanje trenutnog mjeseca
                 var monthEl = document.querySelector('.date_wrapper h4');
                 var dateEl = document.querySelector('.date_wrapper p');
                 var warningTextEl = document.querySelector('.warrning_text p');
@@ -160,10 +156,14 @@ get_header(); ?>
                     month: '2-digit',
                     year: 'numeric'
                 };
+                var optionsYear = {
+                    year: 'numeric'
+                };
 
                 var currentMonth = today.toLocaleDateString('de-DE', optionsMonth);
                 var currentDate = today.toLocaleDateString('de-DE', optionsDate)
-                    .replace(/(\d{2})\./g, '$1.').replace(/(\d{2})\.(\d{2})\./g, '$1.$2.'); // Dodavanje točke nakon dana i mjeseca
+                    .replace(/(\d{2})\./g, '$1.').replace(/(\d{2})\.(\d{2})\./g, '$1.$2.');
+                var currentYear = today.toLocaleDateString('de-DE', optionsYear);
 
                 if (monthEl) {
                     monthEl.textContent = currentMonth;
@@ -171,6 +171,20 @@ get_header(); ?>
 
                 if (dateEl) {
                     dateEl.textContent = currentDate;
+                }
+
+                function updateMonthDisplay() {
+                    var currentCalendarMonth = calendar.view.currentStart;
+                    var newMonth = currentCalendarMonth.toLocaleDateString('de-DE', optionsMonth);
+                    var newYear = currentCalendarMonth.toLocaleDateString('de-DE', optionsYear);
+                    monthEl.textContent = newMonth;
+
+                    // Check if the current calendar month is the same as the actual current month
+                    if (newMonth === currentMonth) {
+                        dateEl.textContent = currentDate; // Show the full date
+                    } else {
+                        dateEl.textContent = newYear; // Show only the year
+                    }
                 }
 
                 function formatDateToGerman(dateStr) {
@@ -247,6 +261,11 @@ get_header(); ?>
                 });
 
                 calendar.render();
+
+                // Add event listeners for next and prev buttons
+                document.querySelectorAll('.fc-toolbar-chunk button.fc-button.fc-button-primary').forEach(function(button) {
+                    button.addEventListener('click', updateMonthDisplay);
+                });
             });
         </script>
 
