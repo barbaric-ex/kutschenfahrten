@@ -54,19 +54,25 @@
 
 .menu_bar_nav {
   background: url(../img/Shapes/Shape_menu_shadow.png);
-  width: 2800px;
+  width: 100%;
   position: absolute;
   top: 0;
   left: 0;
   height: 240px;
+  px; */
+  px; */
   background-position: bottom left;
-  background-size: cover;
+  background-size: 2914px;
   transition: 0.3s;
+  right: 0;
+  background-position: left bottom;
 }
 
 .top-nav-collapse .menu_bar_nav {
-  height: 188px;
-  left: -70px;
+  height: 168px;
+  px; */
+;
+  background-size: 2300px;
 }
 
 .form_top_text {
