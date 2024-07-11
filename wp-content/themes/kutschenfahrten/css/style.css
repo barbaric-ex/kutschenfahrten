@@ -1752,6 +1752,7 @@ body.single-blog-details .menu-item-34 a {
   -webkit-transition: all 0.3s ease;
   -moz-transition: all 0.3s ease;
   transition: all 0.3s ease;
+  background-color: #efefef;
 }
 
 .jetz_sec3 .form_wrap .acf-button:hover {
