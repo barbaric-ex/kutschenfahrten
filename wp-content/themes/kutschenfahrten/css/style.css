@@ -62,7 +62,7 @@
   px; */
   px; */
   background-position: bottom left;
-  background-size: 2914px;
+  background-size: 7914px;
   transition: 0.3s;
   right: 0;
   background-position: left bottom;
@@ -72,7 +72,7 @@
   height: 168px;
   px; */
 ;
-  background-size: 2300px;
+  background-size: 5800px;
 }
 
 .form_top_text {
@@ -2414,8 +2414,8 @@ body.single-blog-details .menu-item-34 a {
   .menu_bar_nav, .top-nav-collapse .menu_bar_nav {
     /* display: none; */
     background-position: left bottom;
-    background-size: 1253px;
-    height: 103px;
+    background-size: 3458px;
+    height: 104px;
     z-index: 99;
   }
   .navbar .container .logo  {
