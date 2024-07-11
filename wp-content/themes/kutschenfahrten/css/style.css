@@ -751,11 +751,11 @@ body.single-blog-details .menu-item-34 a {
 }
 
 .navbar.top-nav-collapse {
-  background-color: white;
+  /* background-color: white; */
   /* -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.45); */
   -moz-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.45);
   /* box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.45); */
-  background: #efefef;
+  /* background: #efefef; */
 }
 
 /**********************************************************/
@@ -2339,12 +2339,12 @@ body.single-blog-details .menu-item-34 a {
   }
 
   .menu_bar_nav {
-    left: -87px;
-    height: 220px;
+   height: 220px;
+   background-position: left -119px bottom;
   }
   .top-nav-collapse .menu_bar_nav {
-    height: 197px;
-    left: -105px;
+    height: 175px;
+    background-position: left -41px bottom;
   }
 
   .top-nav-collapse .logo a img {
@@ -2411,8 +2411,15 @@ body.single-blog-details .menu-item-34 a {
 }
 
 @media (max-width: 991px) {
-  .menu_bar_nav {
-    display: none;
+  .menu_bar_nav, .top-nav-collapse .menu_bar_nav {
+    /* display: none; */
+    background-position: left bottom;
+    background-size: 1253px;
+    height: 103px;
+    z-index: 99;
+  }
+  .navbar .container .logo  {
+    z-index: 99;
   }
   .page-wrap {
     overflow: hidden;
@@ -2654,7 +2661,7 @@ body.single-blog-details .menu-item-34 a {
   }
 
   .fixed-top {
-    overflow: inherit;
+    /* overflow: inherit; */
     background: #fff;
   }
 
@@ -2682,10 +2689,7 @@ body.single-blog-details .menu-item-34 a {
   .navbar {
     padding: 7px 10px;
     opacity: 1;
-    background-color: #efefef;
-    -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.4);
-    -moz-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.4);
-    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.4);
+    background-color: transparent;
     height: auto;
   }
 
@@ -2787,7 +2791,7 @@ body.single-blog-details .menu-item-34 a {
     right: -13px;
     top: 15px;
     z-index: 999;
-    top: 19px;
+    top: -12px;
   }
 
   .menu-btn.active {
@@ -2807,8 +2811,8 @@ body.single-blog-details .menu-item-34 a {
     height: 100%;
     width: 0;
     position: fixed;
-    z-index: 999;
-    top: -26px;
+    z-index: 9;
+    top: -76px;
     right: 0;
     overflow-x: hidden;
     padding-top: 19px;
@@ -2817,11 +2821,11 @@ body.single-blog-details .menu-item-34 a {
     display: block;
     margin-top: 122px;
     margin-bottom: 0;
-    padding-top: 11px;
+    padding-top: 68px;
     padding-left: 0;
-    -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
-    -moz-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
-    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 0px 0px 5px 0px rgb(0 0 0 / 30%);
+    -moz-box-shadow: 0px 0px 5px 0px rgb(0 0 0 / 30%);
+    box-shadow: 0px 0px 5px 0px rgb(0 0 0 / 30%);
     padding-bottom: 50px;
     /* min-height: 650px; */
     background-color: #efefef;
